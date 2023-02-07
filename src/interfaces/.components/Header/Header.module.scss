@@ -1,0 +1,41 @@
+.header {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  width: 100%;
+
+  .logo {
+    border-radius: 50%;
+    border: 0.25vmin solid;
+    height: 10vmin;
+    pointer-events: none;
+    width: 10vmin;
+    z-index: 100;
+  }
+
+  .colorPicker {
+    position: relative;
+  }
+
+  .switch {
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo {
+    animation: spin infinite 20s linear;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

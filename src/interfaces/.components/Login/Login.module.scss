@@ -1,0 +1,256 @@
+.logForm {
+  background: #99e1d7;
+  border-radius: 15px;
+  border-radius: 50px;
+  box-shadow: 20px 20px 60px #82bfb7, -20px -20px 60px #b0fff7;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  z-index: 100;
+}
+
+.logForm::after {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  bottom: 0;
+  content: '';
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.logForm .signup {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  width: 65%;
+  z-index: 5;
+}
+.logForm .signup.slideUp {
+  top: 5%;
+  transform: translate(-50%, 0%);
+  transition: all 0.3s ease;
+}
+.logForm .signup.slideUp .formHolder,
+.logForm .signup.slideUp .submitButton {
+  opacity: 0;
+  visibility: hidden;
+}
+.logForm .signup.slideUp .formTitle {
+  color: black;
+  cursor: pointer;
+  font-size: 1em;
+}
+.logForm .signup.slideUp .formTitle span {
+  margin-right: 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+.logForm .signup .formTitle {
+  color: black;
+  font-size: 1.7em;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logForm .signup .formTitle span {
+  color: rgba(0, 0, 0, 0.4);
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.logForm .signup .formHolder {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 10px;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+.logForm .signup .formHolder .input {
+  border-bottom: 1px solid #eee;
+  border: 0;
+  box-shadow: none;
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  width: 100%;
+}
+.logForm .signup .formHolder .input:last-child {
+  border-bottom: 0;
+}
+.logForm .signup .formHolder .input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.logForm .signup .submitButton {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 15px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 15px auto;
+  opacity: 1;
+  padding: 15px 45px;
+  transition: all 0.3s ease;
+  visibility: visible;
+  width: 100%;
+}
+.logForm .signup .submitButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+.logForm .login {
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20%;
+  transition: all 0.3s ease;
+  z-index: 5;
+}
+.logForm .login::before {
+  background-color: #fff;
+  border-radius: 50%;
+  content: '';
+  height: 250px;
+  left: 50%;
+  position: absolute;
+  top: -20px;
+  transform: translate(-50%, 0);
+  transition: all 0.3s ease;
+  width: 200%;
+  z-index: 4;
+}
+.logForm .login .center {
+  left: 50%;
+  position: absolute;
+  top: calc(50% - 10%);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  width: 65%;
+  z-index: 5;
+}
+.logForm .login .center .formTitle {
+  color: #000;
+  font-size: 1.7em;
+  text-align: center;
+}
+.logForm .login .center .formTitle span {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.logForm .login .center .formHolder {
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  margin-top: 50px;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+.logForm .login .center .formHolder .input {
+  border-bottom: 1px solid #eee;
+  border: 0;
+  box-shadow: none;
+  display: block;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px;
+  outline: none;
+  padding: 8px 15px;
+  width: 100%;
+}
+.logForm .login .center .formHolder .input:last-child {
+  border-bottom: 0;
+}
+.logForm .login .center .formHolder .input::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+.logForm .login .center .submitButton {
+  background-color: #6b92a4;
+  border-radius: 15px;
+  border: 0;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 15px auto;
+  opacity: 1;
+  padding: 15px 45px;
+  transition: all 0.3s ease;
+  visibility: visible;
+  width: 100%;
+}
+.logForm .login .center .submitButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+.logForm .login.slideUp {
+  top: 90%;
+  transition: all 0.3s ease;
+}
+.logForm .login.slideUp .center {
+  top: 10%;
+  transform: translate(-50%, 0%);
+  transition: all 0.3s ease;
+}
+.logForm .login.slideUp .formHolder,
+.logForm .login.slideUp .submitButton {
+  opacity: 0;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.logForm .login.slideUp .formTitle {
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+.logForm .login.slideUp .formTitle span {
+  margin-right: 5px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  visibility: visible;
+}
+
+.inputWrap {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px 15px;
+}
+
+.showPass {
+  opacity: 0.5;
+}
+
+.showPass:hover {
+  opacity: 1;
+}
+
+.icon {
+  background: #6b92a4;
+  color: white;
+  height: 100%;
+  text-align: center;
+}

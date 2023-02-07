@@ -1,0 +1,96 @@
+.color-picker-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #330f53;
+}
+
+.svg-sliders {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.svg-sliders .slider {
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: translatey(-100%);
+  transform: translatey(-100%);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.btn {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: #8b1a89;
+  border: 2px solid;
+  border-color: #c58cc4;
+  border-radius: 50%;
+  margin: 0.5rem;
+  z-index: 2;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.1s ease-in-out;
+}
+.btn.active {
+  border-color: #dd52c9;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out, border-color 0.2s ease-in-out,
+    -webkit-transform 0.2s ease-in-out;
+}
+
+.selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 1rem;
+  top: 0;
+  right: 0;
+}
+.selector-container .selectors {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  right: 0;
+}
+.selector-container .selectors .selector {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: 0;
+  background-color: green;
+  border-radius: 50%;
+  border: 3px solid #c58cc4;
+  z-index: 1;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.selector-container .selectors .selector:hover {
+  cursor: pointer;
+}
